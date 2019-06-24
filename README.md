@@ -44,7 +44,10 @@
 5. LINEスタンプのアプリを思い出し、一緒に写真をとり、一緒にスタンプを作成する。
 6. サークルの話題などのときにその時のスタンプを使い盛り上がる
 
-## Wireframe of key flows (主な流れのワイヤーフレーム）
 
 
 ![](https://github.com/kitanotamayura2357/LINE-STAMP-MAKER-mini-application-product-/blob/master/JohnvonNeumann-LosAlamos.gif)
+
+![](https://github.com/kitanotamayura2357/LINE-STAMP-MAKER-mini-application-product-/blob/master/vonNuemann_LineStamp.png)
+
+## Wireframe of key flows (主な流れのワイヤーフレーム）
