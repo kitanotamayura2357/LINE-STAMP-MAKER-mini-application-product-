@@ -45,3 +45,6 @@
 6. サークルの話題などのときにその時のスタンプを使い盛り上がる
 
 ## Wireframe of key flows (主な流れのワイヤーフレーム）
+
+
+![](https://github.com/kitanotamayura2357/LINE-STAMP-MAKER-mini-application-product-/blob/master/JohnvonNeumann-LosAlamos.gif)
