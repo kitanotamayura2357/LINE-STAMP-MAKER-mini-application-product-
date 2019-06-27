@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EB459CD22C1B8D90028866E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB459CC22C1B8D90028866E /* AppDelegate.swift */; };
+		6EB459CF22C1B8D90028866E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB459CE22C1B8D90028866E /* ViewController.swift */; };
+		6EB459D222C1B8D90028866E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB459D022C1B8D90028866E /* Main.storyboard */; };
+		6EB459D422C1B8DA0028866E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB459D322C1B8DA0028866E /* Assets.xcassets */; };
+		6EB459D722C1B8DA0028866E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB459D522C1B8DA0028866E /* LaunchScreen.storyboard */; };
+		6EB459E222C1B8DB0028866E /* line_stamp_makerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB459E122C1B8DB0028866E /* line_stamp_makerTests.swift */; };
+		6EB459ED22C1B8DB0028866E /* line_stamp_makerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB459EC22C1B8DB0028866E /* line_stamp_makerUITests.swift */; };
+		6EB459FC22C1BE450028866E /* SelectTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB459FB22C1BE450028866E /* SelectTemplateViewController.swift */; };
+		6EB459FE22C1BF490028866E /* SelectPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB459FD22C1BF490028866E /* SelectPictureViewController.swift */; };
+		6EB45A0022C1BF660028866E /* StampListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB459FF22C1BF650028866E /* StampListViewController.swift */; };
+		6EB45A0222C1BFA00028866E /* UseCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB45A0122C1BFA00028866E /* UseCaseViewController.swift */; };
+		6EB45A0622C1E9000028866E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB45A0522C1E9000028866E /* ViewModel.swift */; };
+		6EB45A0922C332C30028866E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB45A0822C332C30028866E /* CoreImage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EB459DE22C1B8DB0028866E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EB459C122C1B8D90028866E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EB459C822C1B8D90028866E;
+			remoteInfo = "line-stamp-maker";
+		};
+		6EB459E922C1B8DB0028866E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EB459C122C1B8D90028866E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EB459C822C1B8D90028866E;
+			remoteInfo = "line-stamp-maker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6EB459C922C1B8D90028866E /* line-stamp-maker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "line-stamp-maker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB459CC22C1B8D90028866E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EB459CE22C1B8D90028866E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6EB459D122C1B8D90028866E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EB459D322C1B8DA0028866E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6EB459D622C1B8DA0028866E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6EB459D822C1B8DA0028866E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB459DD22C1B8DB0028866E /* line-stamp-makerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "line-stamp-makerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB459E122C1B8DB0028866E /* line_stamp_makerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = line_stamp_makerTests.swift; sourceTree = "<group>"; };
+		6EB459E322C1B8DB0028866E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB459E822C1B8DB0028866E /* line-stamp-makerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "line-stamp-makerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB459EC22C1B8DB0028866E /* line_stamp_makerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = line_stamp_makerUITests.swift; sourceTree = "<group>"; };
+		6EB459EE22C1B8DB0028866E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB459FB22C1BE450028866E /* SelectTemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTemplateViewController.swift; sourceTree = "<group>"; };
+		6EB459FD22C1BF490028866E /* SelectPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPictureViewController.swift; sourceTree = "<group>"; };
+		6EB459FF22C1BF650028866E /* StampListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampListViewController.swift; sourceTree = "<group>"; };
+		6EB45A0122C1BFA00028866E /* UseCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseViewController.swift; sourceTree = "<group>"; };
+		6EB45A0522C1E9000028866E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6EB45A0822C332C30028866E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EB459C622C1B8D90028866E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB45A0922C332C30028866E /* CoreImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB459DA22C1B8DB0028866E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB459E522C1B8DB0028866E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EB459C022C1B8D90028866E = {
+			isa = PBXGroup;
+			children = (
+				6EB459CB22C1B8D90028866E /* line-stamp-maker */,
+				6EB459E022C1B8DB0028866E /* line-stamp-makerTests */,
+				6EB459EB22C1B8DB0028866E /* line-stamp-makerUITests */,
+				6EB459CA22C1B8D90028866E /* Products */,
+				6EB45A0722C332C30028866E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6EB459CA22C1B8D90028866E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EB459C922C1B8D90028866E /* line-stamp-maker.app */,
+				6EB459DD22C1B8DB0028866E /* line-stamp-makerTests.xctest */,
+				6EB459E822C1B8DB0028866E /* line-stamp-makerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EB459CB22C1B8D90028866E /* line-stamp-maker */ = {
+			isa = PBXGroup;
+			children = (
+				6EB459CC22C1B8D90028866E /* AppDelegate.swift */,
+				6EB459CE22C1B8D90028866E /* ViewController.swift */,
+				6EB45A0522C1E9000028866E /* ViewModel.swift */,
+				6EB459FB22C1BE450028866E /* SelectTemplateViewController.swift */,
+				6EB459FD22C1BF490028866E /* SelectPictureViewController.swift */,
+				6EB459FF22C1BF650028866E /* StampListViewController.swift */,
+				6EB45A0122C1BFA00028866E /* UseCaseViewController.swift */,
+				6EB459D022C1B8D90028866E /* Main.storyboard */,
+				6EB459D322C1B8DA0028866E /* Assets.xcassets */,
+				6EB459D522C1B8DA0028866E /* LaunchScreen.storyboard */,
+				6EB459D822C1B8DA0028866E /* Info.plist */,
+			);
+			path = "line-stamp-maker";
+			sourceTree = "<group>";
+		};
+		6EB459E022C1B8DB0028866E /* line-stamp-makerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EB459E122C1B8DB0028866E /* line_stamp_makerTests.swift */,
+				6EB459E322C1B8DB0028866E /* Info.plist */,
+			);
+			path = "line-stamp-makerTests";
+			sourceTree = "<group>";
+		};
+		6EB459EB22C1B8DB0028866E /* line-stamp-makerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EB459EC22C1B8DB0028866E /* line_stamp_makerUITests.swift */,
+				6EB459EE22C1B8DB0028866E /* Info.plist */,
+			);
+			path = "line-stamp-makerUITests";
+			sourceTree = "<group>";
+		};
+		6EB45A0722C332C30028866E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB45A0822C332C30028866E /* CoreImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EB459C822C1B8D90028866E /* line-stamp-maker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB459F122C1B8DB0028866E /* Build configuration list for PBXNativeTarget "line-stamp-maker" */;
+			buildPhases = (
+				6EB459C522C1B8D90028866E /* Sources */,
+				6EB459C622C1B8D90028866E /* Frameworks */,
+				6EB459C722C1B8D90028866E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "line-stamp-maker";
+			productName = "line-stamp-maker";
+			productReference = 6EB459C922C1B8D90028866E /* line-stamp-maker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EB459DC22C1B8DB0028866E /* line-stamp-makerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB459F422C1B8DB0028866E /* Build configuration list for PBXNativeTarget "line-stamp-makerTests" */;
+			buildPhases = (
+				6EB459D922C1B8DB0028866E /* Sources */,
+				6EB459DA22C1B8DB0028866E /* Frameworks */,
+				6EB459DB22C1B8DB0028866E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EB459DF22C1B8DB0028866E /* PBXTargetDependency */,
+			);
+			name = "line-stamp-makerTests";
+			productName = "line-stamp-makerTests";
+			productReference = 6EB459DD22C1B8DB0028866E /* line-stamp-makerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EB459E722C1B8DB0028866E /* line-stamp-makerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB459F722C1B8DB0028866E /* Build configuration list for PBXNativeTarget "line-stamp-makerUITests" */;
+			buildPhases = (
+				6EB459E422C1B8DB0028866E /* Sources */,
+				6EB459E522C1B8DB0028866E /* Frameworks */,
+				6EB459E622C1B8DB0028866E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EB459EA22C1B8DB0028866E /* PBXTargetDependency */,
+			);
+			name = "line-stamp-makerUITests";
+			productName = "line-stamp-makerUITests";
+			productReference = 6EB459E822C1B8DB0028866E /* line-stamp-makerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EB459C122C1B8D90028866E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Takashi Imoto";
+				TargetAttributes = {
+					6EB459C822C1B8D90028866E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6EB459DC22C1B8DB0028866E = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6EB459C822C1B8D90028866E;
+					};
+					6EB459E722C1B8DB0028866E = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6EB459C822C1B8D90028866E;
+					};
+				};
+			};
+			buildConfigurationList = 6EB459C422C1B8D90028866E /* Build configuration list for PBXProject "line-stamp-maker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EB459C022C1B8D90028866E;
+			productRefGroup = 6EB459CA22C1B8D90028866E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EB459C822C1B8D90028866E /* line-stamp-maker */,
+				6EB459DC22C1B8DB0028866E /* line-stamp-makerTests */,
+				6EB459E722C1B8DB0028866E /* line-stamp-makerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EB459C722C1B8D90028866E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB459D722C1B8DA0028866E /* LaunchScreen.storyboard in Resources */,
+				6EB459D422C1B8DA0028866E /* Assets.xcassets in Resources */,
+				6EB459D222C1B8D90028866E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB459DB22C1B8DB0028866E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB459E622C1B8DB0028866E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EB459C522C1B8D90028866E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB45A0222C1BFA00028866E /* UseCaseViewController.swift in Sources */,
+				6EB459CF22C1B8D90028866E /* ViewController.swift in Sources */,
+				6EB45A0022C1BF660028866E /* StampListViewController.swift in Sources */,
+				6EB459FE22C1BF490028866E /* SelectPictureViewController.swift in Sources */,
+				6EB459FC22C1BE450028866E /* SelectTemplateViewController.swift in Sources */,
+				6EB459CD22C1B8D90028866E /* AppDelegate.swift in Sources */,
+				6EB45A0622C1E9000028866E /* ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB459D922C1B8DB0028866E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB459E222C1B8DB0028866E /* line_stamp_makerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB459E422C1B8DB0028866E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB459ED22C1B8DB0028866E /* line_stamp_makerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EB459DF22C1B8DB0028866E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EB459C822C1B8D90028866E /* line-stamp-maker */;
+			targetProxy = 6EB459DE22C1B8DB0028866E /* PBXContainerItemProxy */;
+		};
+		6EB459EA22C1B8DB0028866E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EB459C822C1B8D90028866E /* line-stamp-maker */;
+			targetProxy = 6EB459E922C1B8DB0028866E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EB459D022C1B8D90028866E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EB459D122C1B8D90028866E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6EB459D522C1B8DA0028866E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EB459D622C1B8DA0028866E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EB459EF22C1B8DB0028866E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EB459F022C1B8DB0028866E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EB459F222C1B8DB0028866E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "line-stamp-maker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kitanotamayura.line-stamp-maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EB459F322C1B8DB0028866E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "line-stamp-maker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kitanotamayura.line-stamp-maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EB459F522C1B8DB0028866E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "line-stamp-makerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kitanotamayura.line-stamp-makerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/line-stamp-maker.app/line-stamp-maker";
+			};
+			name = Debug;
+		};
+		6EB459F622C1B8DB0028866E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "line-stamp-makerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kitanotamayura.line-stamp-makerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/line-stamp-maker.app/line-stamp-maker";
+			};
+			name = Release;
+		};
+		6EB459F822C1B8DB0028866E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "line-stamp-makerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kitanotamayura.line-stamp-makerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "line-stamp-maker";
+			};
+			name = Debug;
+		};
+		6EB459F922C1B8DB0028866E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "line-stamp-makerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kitanotamayura.line-stamp-makerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "line-stamp-maker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EB459C422C1B8D90028866E /* Build configuration list for PBXProject "line-stamp-maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB459EF22C1B8DB0028866E /* Debug */,
+				6EB459F022C1B8DB0028866E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB459F122C1B8DB0028866E /* Build configuration list for PBXNativeTarget "line-stamp-maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB459F222C1B8DB0028866E /* Debug */,
+				6EB459F322C1B8DB0028866E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB459F422C1B8DB0028866E /* Build configuration list for PBXNativeTarget "line-stamp-makerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB459F522C1B8DB0028866E /* Debug */,
+				6EB459F622C1B8DB0028866E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB459F722C1B8DB0028866E /* Build configuration list for PBXNativeTarget "line-stamp-makerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB459F822C1B8DB0028866E /* Debug */,
+				6EB459F922C1B8DB0028866E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EB459C122C1B8D90028866E /* Project object */;
+}
