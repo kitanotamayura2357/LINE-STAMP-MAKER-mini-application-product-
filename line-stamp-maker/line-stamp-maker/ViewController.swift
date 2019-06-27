@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
        
-        TitleLabel.text = "Stamp maker"
+        TitleLabel.text = "Line stamp maker"
 
     }
     
