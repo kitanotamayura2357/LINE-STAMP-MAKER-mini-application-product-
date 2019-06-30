@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import CoreImage
 
 class StampListViewController: UIViewController {
 
@@ -15,8 +14,9 @@ class StampListViewController: UIViewController {
     @IBOutlet weak var arrangedImage: UIImageView!
     var imageList = [UIImage]()
     
-    let imageView = UIImageView()
+    var selectedImage:UIImage?
     
+    let imageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +26,14 @@ class StampListViewController: UIViewController {
         let detector = CIDetector(ofType: CIDetectorTypeFace, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh])
         
         // UIImage から CGImage を作る
-        let cgImage = imageList[2].cgImage!
+        guard let cgImage = selectedImage?.cgImage! else {return}
         // CGImage から CIImage を作る
         let ciImage = CIImage(cgImage: cgImage)
         // 顔検出実行
         let features = detector!.features(in: ciImage, options: [CIDetectorSmile : false])
         for feature in features as! [CIFaceFeature] {
             
-            let img = imageList[2]
+            let img = selectedImage!
             let fb: CGRect = feature.bounds
             let rect: CGRect = CGRect(x: fb.origin.x - fb.width*0.5, y: (img.size.height - fb.origin.y - fb.size.height) - fb.height*0.8, width: fb.width*2.0, height: fb.height*2.0)
             
@@ -58,25 +58,14 @@ class StampListViewController: UIViewController {
             let newRect = CGRect(x:0, y:0, width:200, height: 200)
             imageView.frame = newRect
             imageView.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
-            
-            
             arrangedImage.image = newImage
             
           
         }
-        
-        
     }
     
     // セーブを行う
     func saveImage() {
-        
-        //                 クリックした UIImageView を取得
-        //                let targetImageView = sender.view! as! UIImageView
-        
-        //                 その中の UIImage を取得
-        //                let targetImage = targetImageView.image!
-        
         // UIImage の画像をカメラロールに画像を保存
         UIImageWriteToSavedPhotosAlbum(arrangedImage.image!, self, #selector(showResultOfSaveImage(_:didFinishSavingWithError:contextInfo:)), nil)
     }
@@ -84,7 +73,6 @@ class StampListViewController: UIViewController {
     
     // 保存を試みた結果をダイアログで表示
     @objc func showResultOfSaveImage(_ image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutableRawPointer) {
-        
         var title = "保存完了"
         var message = "カメラロールに保存しました"
         
@@ -102,17 +90,10 @@ class StampListViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    
-    
 
-    
     @IBAction func SaveImageButton(_ sender: Any) {
-        
         saveImage()
     }
-    
-
-    
 }
 
 extension UIImage {
@@ -134,9 +115,3 @@ extension UIImage {
         return result
     }
 }
-
-
-
-
-
-

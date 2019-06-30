@@ -12,19 +12,17 @@ import Photos
 
 class SelectPictureViewController: UIViewController {
     @IBOutlet weak var SelectPictureLabel: UILabel!
-    @IBOutlet weak var imageview: UIImageView!
-    @IBAction func saveImageButton(_ sender: Any) {
-    }
+    @IBOutlet weak var pictureCollectionView: UICollectionView!
+    
     var photoAssets = [PHAsset]()
     var imageList = [UIImage]()
+    var selectedImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pictureCollectionView.dataSource = self
+        pictureCollectionView.delegate = self
         SelectPictureLabel.text = "写真を選択"
-        // Do any additional setup after loading the view.
-        
-        
-    
         // ソート条件を指定
         let options = PHFetchOptions()
         options.sortDescriptors = [
@@ -40,33 +38,62 @@ class SelectPictureViewController: UIViewController {
             manager.requestImage(for: asset,
                                  targetSize: PHImageManagerMaximumSize,
                                  contentMode: .aspectFit,
-                                 options: nil) { (image, info) -> Void in
+                                 options: nil) { [unowned self] (image, info) -> Void in
 
-//                                    print("image",image)
-                                    print("assets",assets)
-
-//                                    self.imageview.image = image
                                     self.imageList.append(image!)
-                                    self.imageview.image = self.imageList[0]
-
-
-
+                                    self.pictureCollectionView.reloadData()
             }
         }
-//        print("PHImageManagerMaximumSize",PHImageManagerMaximumSize)
-//        print("photoAssets",photoAssets)
-//        print("imageList",imageList)
-//        print("imageList1",imageList[0])
     }
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "toViewController2") {
             let vc2: StampListViewController = (segue.destination as? StampListViewController)!
-            // ViewControllerのtextVC2にメッセージを設定
-            vc2.imageList = imageList
+           
+            guard let selectedImage = selectedImage else {return}
+            vc2.selectedImage = selectedImage
+            
         }
     }
-    
-
 }
+
+extension SelectPictureViewController: UICollectionViewDelegate {
+    
+}
+
+extension SelectPictureViewController: UICollectionViewDataSource {
+    func collectionView(_ pictureCollectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return imageList.count
+        
+    }
+    
+    func collectionView(_ pictureCollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = pictureCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        
+        let imageView = cell.contentView.viewWithTag(1) as! UIImageView
+        imageView.image = imageList[indexPath.row]
+        cell.layer.borderColor = UIColor( red: 1.0, green: 0.0, blue:0, alpha: 1.0 ).cgColor
+        return cell
+    }
+    
+    // Cell が選択された場合
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+        
+        // [indexPath.row] から画像名を探し、UImage を設定
+        selectedImage = imageList[indexPath.row]
+        
+        print("selectedImage",selectedImage)
+        print("indexPath.row",indexPath.row)
+        if selectedImage != nil {
+            
+            collectionView.visibleCells.forEach { cell in
+                let curIndexPath = collectionView.indexPath(for: cell)
+                cell.layer.borderWidth = indexPath == curIndexPath ? 3 : 0
+            }
+        }
+    }
+}
+
+
+
+

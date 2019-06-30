@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "line-stamp-maker/SelectTemplateViewController.swift"
-            timestampString = "583320852.5620511"
+            timestampString = "583597281.143531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -118,7 +118,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "line-stamp-maker/SelectTemplateViewController.swift"
-            timestampString = "583320852.562396"
+            timestampString = "583597281.143906"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -130,17 +130,109 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "line-stamp-maker/SelectPictureViewController.swift"
-            timestampString = "583319030.623489"
+            filePath = "line-stamp-maker/SelectTemplateViewController.swift"
+            timestampString = "583597281.144171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "SelectTemplateViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "line_stamp_maker.SelectTemplateViewController.SelectionTemplateLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "line-stamp-maker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/takashi.a.imoto/Desktop/code/src/github.com/kitanotamayura2357/src/github.com/bootcamp-tpa/LINE-STAMP-MAKER-mini-application-product-/line-stamp-maker/line-stamp-maker/SelectTemplateViewController.swift"
+                  timestampString = "583597210.174027"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "line_stamp_maker.SelectTemplateViewController.SelectionTemplateLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "line-stamp-maker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/takashi.a.imoto/Desktop/code/src/github.com/kitanotamayura2357/src/github.com/bootcamp-tpa/LINE-STAMP-MAKER-mini-application-product-/line-stamp-maker/line-stamp-maker/SelectTemplateViewController.swift"
+                  timestampString = "583597210.2225569"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "line_stamp_maker.SelectTemplateViewController.SelectionTemplateLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "line-stamp-maker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/takashi.a.imoto/Desktop/code/src/github.com/kitanotamayura2357/src/github.com/bootcamp-tpa/LINE-STAMP-MAKER-mini-application-product-/line-stamp-maker/line-stamp-maker/SelectTemplateViewController.swift"
+                  timestampString = "583597210.228569"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "line_stamp_maker.SelectTemplateViewController.SelectionTemplateLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "line-stamp-maker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/takashi.a.imoto/Desktop/code/src/github.com/kitanotamayura2357/src/github.com/bootcamp-tpa/LINE-STAMP-MAKER-mini-application-product-/line-stamp-maker/line-stamp-maker/SelectTemplateViewController.swift"
+                  timestampString = "583597210.237227"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "line_stamp_maker.SelectTemplateViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; line_stamp_maker.SelectTemplateViewController"
+                  moduleName = "line-stamp-maker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/takashi.a.imoto/Desktop/code/src/github.com/kitanotamayura2357/src/github.com/bootcamp-tpa/LINE-STAMP-MAKER-mini-application-product-/line-stamp-maker/line-stamp-maker/SelectTemplateViewController.swift"
+                  timestampString = "583597210.278385"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "line_stamp_maker.SelectTemplateViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;line_stamp_maker.SelectTemplateViewController&gt;"
+                  moduleName = "line-stamp-maker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/takashi.a.imoto/Desktop/code/src/github.com/kitanotamayura2357/src/github.com/bootcamp-tpa/LINE-STAMP-MAKER-mini-application-product-/line-stamp-maker/line-stamp-maker/SelectTemplateViewController.swift"
+                  timestampString = "583597210.286952"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

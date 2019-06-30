@@ -20,6 +20,7 @@
 		6EB45A0222C1BFA00028866E /* UseCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB45A0122C1BFA00028866E /* UseCaseViewController.swift */; };
 		6EB45A0622C1E9000028866E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB45A0522C1E9000028866E /* ViewModel.swift */; };
 		6EB45A0922C332C30028866E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB45A0822C332C30028866E /* CoreImage.framework */; };
+		6EB45A0B22C524C90028866E /* SubVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB45A0A22C524C90028866E /* SubVIewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		6EB45A0122C1BFA00028866E /* UseCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseViewController.swift; sourceTree = "<group>"; };
 		6EB45A0522C1E9000028866E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6EB45A0822C332C30028866E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		6EB45A0A22C524C90028866E /* SubVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubVIewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				6EB459FF22C1BF650028866E /* StampListViewController.swift */,
 				6EB45A0122C1BFA00028866E /* UseCaseViewController.swift */,
 				6EB459D022C1B8D90028866E /* Main.storyboard */,
+				6EB45A0A22C524C90028866E /* SubVIewController.swift */,
 				6EB459D322C1B8DA0028866E /* Assets.xcassets */,
 				6EB459D522C1B8DA0028866E /* LaunchScreen.storyboard */,
 				6EB459D822C1B8DA0028866E /* Info.plist */,
@@ -286,6 +289,7 @@
 				6EB45A0222C1BFA00028866E /* UseCaseViewController.swift in Sources */,
 				6EB459CF22C1B8D90028866E /* ViewController.swift in Sources */,
 				6EB45A0022C1BF660028866E /* StampListViewController.swift in Sources */,
+				6EB45A0B22C524C90028866E /* SubVIewController.swift in Sources */,
 				6EB459FE22C1BF490028866E /* SelectPictureViewController.swift in Sources */,
 				6EB459FC22C1BE450028866E /* SelectTemplateViewController.swift in Sources */,
 				6EB459CD22C1B8D90028866E /* AppDelegate.swift in Sources */,
